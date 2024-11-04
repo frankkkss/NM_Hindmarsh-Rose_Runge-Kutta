@@ -1,4 +1,14 @@
 function [x,y,z,t] = rk4sys3(fx,fy,fz,x,y,z,t,h)
+    % Runge-Kutta 4th order method for a system of 3 differential equations
+    % Inputs:
+    % fx, fy, fz: functions of the system of differential equations
+    % x, y, z: initial conditions
+    % t: time vector
+    % h: time step
+    %
+    % Outputs:
+    % x, y, z: solution vectors of the system
+    % t: time vector
 
     N = ceil(t(end)/h);             % Number of iterative steps
 
